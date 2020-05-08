@@ -1,2 +1,2 @@
 # prepare
-base study
+a little
