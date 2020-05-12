@@ -3,6 +3,7 @@ package org.larry.normal.sort;
 /**
  * 快速排序
  * 基本思想：每次选择一个基准值，一趟下来把大的，小的从基准值分开
+ * 时间复杂O(nlogn)
  */
 public class FastSort {
 
