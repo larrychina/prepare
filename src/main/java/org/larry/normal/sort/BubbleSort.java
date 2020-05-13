@@ -2,6 +2,10 @@ package org.larry.normal.sort;
 
 /**
  * 冒泡排序
+ * 基本思想：
+ * 时间复杂度：
+ * 空间复杂度：
+ * 是否稳定：
  */
 public class BubbleSort {
 
