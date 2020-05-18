@@ -14,8 +14,7 @@ public class MergeSort {
             return arr;
         }
 
-        int sart = 0 , end = arr.length -1;
-        sortC(arr,sart,end);
+        sortC(arr,0,arr.length -1);
         return arr ;
     }
 
@@ -31,6 +30,13 @@ public class MergeSort {
         }
     }
 
+    /**
+     * 一个数组两段数据进行比较，赋值到临时数组中
+     * @param arr
+     * @param low
+     * @param mindle
+     * @param high
+     */
     public void megere(int [] arr,int low , int mindle ,int high){
 
         int tmp[] = new int[arr.length] ;
@@ -68,7 +74,7 @@ public class MergeSort {
         MergeSort bs = new MergeSort() ;
         bs.megere(arr,0,(arr.length)/2,arr.length-1);
         bs.print(arr);
-        //bs.print(bs.sort(arr));
+        bs.print(bs.sort(arr));
         //bs.print(bs.sort(arr1));
     }
 }

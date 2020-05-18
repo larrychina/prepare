@@ -20,6 +20,7 @@ public class SelectionSort {
         int minIndex;
         for (int i = 0; i < arr.length - 1; i++) {
             minIndex = i ;
+            // 一趟下来找到最小元素的下标
             for (int j = i+1; j < arr.length ; j++) {
                 if(arr[j] < arr[minIndex]){
                     minIndex = j ;
