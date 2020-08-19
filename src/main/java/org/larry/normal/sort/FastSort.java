@@ -20,6 +20,7 @@ public class FastSort {
     public static void quickSort(int[] arr, int low, int high){
         if(high > low){
             int index = getIndex(arr,low,high) ;
+            System.out.println(high);
             quickSort(arr,index+1,high);
 
             quickSort(arr,0,index-1);

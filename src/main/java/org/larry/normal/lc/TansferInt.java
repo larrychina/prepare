@@ -1,6 +1,5 @@
 package org.larry.normal.lc;
 
-import org.openjdk.jol.info.ClassLayout;
 
 import java.util.*;
 
@@ -92,7 +91,7 @@ public class TansferInt {
 
         StringBuffer x = new StringBuffer();
 
-        System.out.println(ClassLayout.parseInstance(tansferInt).toPrintable() );;
+      //  System.out.println(ClassLayout.parseInstance(tansferInt).toPrintable() );;
 
         x.append(a);
         System.out.println(x.toString());

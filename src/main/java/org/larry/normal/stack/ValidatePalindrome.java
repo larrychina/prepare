@@ -5,7 +5,7 @@ package org.larry.normal.stack;
  */
 public class ValidatePalindrome {
 
-    public boolean validPalindrome(String s) {
+    public static boolean validPalindrome(String s) {
         int low = 0 ;
         int high = s.length() - 1 ;
         while (low < high){
@@ -15,8 +15,9 @@ public class ValidatePalindrome {
                 low ++ ;
                 high -- ;
             } else{
+                return false ;
                 // 删除一个字符看是否满足 abcbad
-                boolean left = true , right = true ;
+               /* boolean left = true , right = true ;
                 for(int i = low + 1,j = high ; i < j; i++ ,j--){
                     char iC = s.charAt(i) ;
                     char jC = s.charAt(j) ;
@@ -34,10 +35,14 @@ public class ValidatePalindrome {
                         break;
                     }
                 }
-                return  right || left ;
+                return  right || left ;*/
             }
         }
         return true ;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(validPalindrome("aabbcfcbbaa"));;
     }
 
 }
