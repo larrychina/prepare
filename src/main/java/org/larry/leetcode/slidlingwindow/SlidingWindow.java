@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * 滑动窗口机制
  * 1，计算指定字符串无重复子串长度
- * 2，就算数组中n个连续数组的最大和
+ * 2，计算数组中n个连续数组的最大和
  */
 public class SlidingWindow {
 
